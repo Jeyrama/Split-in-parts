@@ -18,3 +18,12 @@ Size is always positive
 
 
 // Solution
+
+let splitInParts = function(s, partLength){
+  let parts = [];
+  let array = s.split('');
+  while(array.length) {
+  	parts.push(array.splice(0,partLength).join(''));
+  }
+  return parts.join(' ');
+}
