@@ -29,3 +29,6 @@ let splitInParts = function(s, partLength){
 }
 
 // or
+
+const partSplitter = (s, partLength) => 
+  s.match(new RegExp(`.{1,${ partLength }}`, 'g')).join(' ');
