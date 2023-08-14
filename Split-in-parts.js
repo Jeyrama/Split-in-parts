@@ -27,3 +27,5 @@ let splitInParts = function(s, partLength){
   }
   return parts.join(' ');
 }
+
+// or
